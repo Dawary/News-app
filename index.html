@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="asserts/news.jpg">
+    <title>Newsweb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- navbar -->
+  <nav>
+    <a href="#" onclick="reload()" class="logo">
+        <img src="asserts/news.jpg" width="60px" alt="">
+    </a>
+    <div class="nav-content">
+        <ul>
+            <li>
+                <a class="nav-item" id="general" onclick="onNavItemClick('general')" href="#">general</a>
+                <a class="nav-item" id="entertainment" onclick="onNavItemClick('entertainment')" href="#">entertainment</a>
+                <a class="nav-item" id="sports" onclick="onNavItemClick('sports')" href="#">sports</a>
+                <a class="nav-item" id="technology" onclick="onNavItemClick('technology')" href="#">technology</a>
+                <a class="nav-item" id="business" onclick="onNavItemClick('business')" href="#">business</a>
+
+            </li>
+        </ul>
+    </div>
+    <div class="search-bar">
+        <input id="news-input" type="text" class="news-input" placeholder="search news" >
+        <button id="news-btn" class="btn">Search</button>
+    </div>
+  </nav>
+
+    </div>
+
+    
+    <!-- main
+     -->
+     <main>
+        <div class="card-container container flex" id="card-container">
+            
+
+
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title">title</h3>
+                <h6 id="news-source" class="news-source">end gadget 29/08/2032</h6>
+                <p id="news-desc" class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, culpa est! Ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea.</p>
+
+
+            </div>
+        </div>
+    </template>
+
+
+<script src="script.js"></script>
+</body>
+</html>
